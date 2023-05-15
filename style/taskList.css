@@ -1,0 +1,64 @@
+.list_top_offset{
+    height: 13vh
+}
+.task_container{
+    height: 100vh;
+    overflow-y: auto;
+}
+.task_container::-webkit-scrollbar{
+    width: 5px;
+}
+.task_container::-webkit-scrollbar-thumb{
+    background: #005eac;
+    border-radius: 5px;
+}
+.tasks_list{
+    width: 90%;
+    margin: auto;
+}
+.todo_elem{
+    width: 75vw;
+    height: 9vh;
+    line-height: 9vh;
+    margin: 1vh auto;
+    border-radius: 6px;
+    background: #fffd;
+}
+.todo_elem:hover{
+    background: #fff !important
+}
+.todo_task{
+    margin: 0 1vw;
+    font-size: 16pt;
+}
+.todo_switch{
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    margin: 2vh 2vh;
+    border-radius: 3vh;
+    float: left;
+    background: #7e7e7e;
+}
+.todo_switch:before{
+    content: "";
+    position: absolute;
+    top: 0.75vh;
+    left: 0.75vh;
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 2vh;
+    background: white;
+}
+.checked{
+    content: url(../svg/check.svg);
+    width: 5vh;
+    outline: none;
+}
+.solved{
+    text-decoration: line-through;
+    color: #7e7e7e
+}
+.list_bottom_offset{
+    height: 16vh;
+}

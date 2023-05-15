@@ -48,6 +48,7 @@ for(let i = 0; i < switches.length; i++){
 task_inp.addEventListener('focus', () => {
     task_inp.placeholder = '';
     todo_task_creater.style.background = '#fff'
+    console.log('focus')
 })
 task_inp.addEventListener('keydown', (event) => {
     if (event.code == 'Enter' && task_inp.value){
@@ -62,4 +63,21 @@ task_create.addEventListener('click', () => {
 task_inp.addEventListener('blur', () => {
     task_inp.placeholder = 'Добавить задачу';
     todo_task_creater.style.background = '#fffa'
+})
+settings_btn_container.addEventListener('click', () => {
+    todo_settings_modal_window.style.display = 'block'
+})
+todo_settings_modal_window.addEventListener('click', (event) => {
+    console.log(event.target.id == 'todo_settings_modal_window')
+    if (event.target.id == 'todo_settings_modal_window'){
+        todo_settings_modal_window.style.display = 'none'
+    }
+})
+
+
+settings_sort.addEventListener('mouseover', () => {
+    todo_sort_container.style.display = 'block'
+})
+settings_sort.addEventListener('mouseout', () => {
+    todo_sort_container.style.display = null
 })

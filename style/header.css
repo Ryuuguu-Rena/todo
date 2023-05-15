@@ -1,0 +1,44 @@
+.todo_header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 13vh;
+    line-height: 13vh;
+    width: 80vw;
+    margin: auto;
+    background: #a8d8ffaa;
+    backdrop-filter: blur(8px);
+    z-index: 1;
+}
+.todo_header_title{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    font-size: 20pt;
+    font-weight: bold;
+    color: #fff;
+}
+#settings_btn_container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 9vh;
+    height: 9vh;
+    margin: auto;
+    border-radius: 5px;
+}
+#settings_btn_container:hover{
+    background: #efefef59
+}
+.settings_btn{
+    content: url(../svg/settings.svg);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 7vh;
+    margin: auto;
+}

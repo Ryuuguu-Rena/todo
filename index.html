@@ -1,34 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style/style.css">
-    <title>To Do</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/modalWindow.css">
+  <link rel="stylesheet" href="style/taskCreater.css">
+  <link rel="stylesheet" href="style/taskList.css">
+  <title>To Do</title>
 </head>
 <body>
-    <div class="task_container">
-      <h1>Задачи</h1>
-      <div id="todo_list" class="tasks_list">
-          <div id="0" class="todo_elem"><div class="todo_switch"></div><div class="todo_task">1 задание</div>
+  <div class="todo_header">
+    <div class="todo_header_title">Задачи</div>
+    <div id="settings_btn_container">
+      <div class="settings_btn"></div>
+    </div>
+  </div>
+
+  <div id="todo_settings_modal_window">
+    <div class="settings_container">
+      <div class="settings_item settings_list" id="settings_sort">
+        <div class="settings_list_arrow"></div>
+        <div class="settings_item_img"></div>
+        <div class="settings_item_text">
+          Порядок сортировки
+        </div>
+        <div id="todo_sort_container">
+          <div class="settings_item" id="sort_alphabet">
+            <div class="settings_item_img"></div>
+            <div class="settings_item_text">
+              По алфавиту
+            </div>
           </div>
-          <div id="1" class="todo_elem"><div class="todo_switch"></div><div class="todo_task">2 задание</div>
+          <div class="settings_item" id="sort_creation_date">
+            <div class="settings_item_img"></div>
+            <div class="settings_item_text">
+              По дате создания
+            </div>
           </div>
-          <div id="2" class="todo_elem"><div class="todo_switch"></div><div class="todo_task">3 задание</div>
-          </div>
+        </div>
       </div>
-      <h2>Завершённые</h2>
-      <div id="todo_solved_list" class="tasks_list">
-        <div id="0" class="todo_elem"><div class="todo_switch checked"></div><div class="todo_task solved">4 задача</div>
+
+      <div class="settings_item" id="settings_save">
+        <div class="settings_item_img"></div>
+        <div class="settings_item_text">
+          Сохранить задачи
+        </div>
+      </div>
+      
+      <div class="settings_item" id="settings_upload">
+        <div class="settings_item_img"></div>
+        <div class="settings_item_text">
+          Загрузить задачи
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="todo_task_creater_container">
-      <div id="todo_task_creater">
-        <div id="task_create"></div>
-        <input type="text" placeholder="Добавить задачу" id="task_inp">
+  
+
+  <div class="task_container">
+    <div class="list_top_offset"></div>
+    <div id="todo_list" class="tasks_list">
+        <div id="0" class="todo_elem"><div class="todo_switch"></div><div class="todo_task">1 задание</div>
+        </div>
+        <div id="1" class="todo_elem"><div class="todo_switch"></div><div class="todo_task">2 задание</div>
+        </div>
+        <div id="2" class="todo_elem"><div class="todo_switch"></div><div class="todo_task">3 задание</div>
+        </div>
+    </div>
+    <h2>Завершённые</h2>
+    <div id="todo_solved_list" class="tasks_list">
+      <div id="0" class="todo_elem"><div class="todo_switch checked"></div><div class="todo_task solved">4 задача</div>
       </div>
     </div>
-    <script src="script/script.js"></script>
+    <div class="list_bottom_offset"></div>
+  </div>
+
+  <div class="todo_task_creater_container">
+    <div id="todo_task_creater">
+      <div id="task_create"></div>
+      <input type="text" placeholder="Добавить задачу" id="task_inp">
+    </div>
+  </div>
+  <script src="script/script.js"></script>
 </body>
 </html>

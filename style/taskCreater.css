@@ -1,0 +1,52 @@
+.todo_task_creater_container{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80vw;
+    height: 16vh;
+    background: #a8d8ffaa;
+    backdrop-filter: blur(8px);
+}
+#todo_task_creater{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5vh;
+    width: 75vw;
+    height: 9vh;
+    margin: 0 auto;
+    background: #fffa;
+    border-radius: 10px;
+}
+#todo_task_creater:hover{
+    background: #fff !important
+}
+#task_create{
+    content: url(../svg/plusBlur.svg);
+    width: 3vh;
+    margin: 3vh;
+    float: left;
+}
+#task_create:hover{
+    content: url(../svg/plustHover.svg);
+}
+#task_inp{
+    display: block;
+    width: 66vw;
+    height: 9vh;
+    line-height: 9vh;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16pt
+}
+#task_inp::placeholder{
+    border: none;
+    font-family: sans-serif;
+    font-size: 16pt;
+    color: #000
+}
