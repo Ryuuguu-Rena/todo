@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style/modalWindow.css">
   <link rel="stylesheet" href="style/taskCreater.css">
   <link rel="stylesheet" href="style/taskList.css">
+  <link rel="stylesheet" href="style/changeWindow.css">
   <title>To Do</title>
 </head>
 <body>
@@ -57,23 +58,12 @@
     </div>
   </div>
 
-  
 
   <div class="task_container">
     <div class="list_top_offset"></div>
-    <div id="todo_list" class="tasks_list">
-        <div id="0" class="todo_elem"><div class="todo_switch"></div><div class="todo_task">1 задание</div>
-        </div>
-        <div id="1" class="todo_elem"><div class="todo_switch"></div><div class="todo_task">2 задание</div>
-        </div>
-        <div id="2" class="todo_elem"><div class="todo_switch"></div><div class="todo_task">3 задание</div>
-        </div>
-    </div>
+    <div id="todo_list" class="tasks_list"></div>
     <h2>Завершённые</h2>
-    <div id="todo_solved_list" class="tasks_list">
-      <div id="0" class="todo_elem"><div class="todo_switch checked"></div><div class="todo_task solved">4 задача</div>
-      </div>
-    </div>
+    <div id="todo_solved_list" class="tasks_list"></div>
     <div class="list_bottom_offset"></div>
   </div>
 
@@ -83,6 +73,20 @@
       <input type="text" placeholder="Добавить задачу" id="task_inp">
     </div>
   </div>
+
+
+  <div id="todo_change_task_window">
+    <div id="change_close_container">
+      <div class="change_close_img"></div>
+    </div>
+    <div class="change_text_inp_container">
+      <input type="text" id="change_text_inp">
+    </div>
+    <div id="delete_task_container">
+      <div class="delete_task_img"></div>
+    </div>
+  </div>
+
   <script src="script/script.js"></script>
 </body>
 </html>

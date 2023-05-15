@@ -1,0 +1,54 @@
+#todo_change_task_window{
+    display: none;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    background: #fbfbfb;
+}
+#change_close_container{
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+    padding: 1vh;
+}
+#change_close_container:hover{
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+.change_close_img{
+    content: url(../svg/cross.svg);
+    width: 2vh;
+}
+.change_text_inp_container{
+    width: 27vw;
+    margin: 8vh auto;
+}
+#change_text_inp{
+    width: 100%;
+    height: 8vh;
+    outline: none;
+    border: 1px solid #e9e9e9;
+}
+#delete_task_container{
+    position: absolute;
+    bottom: 0;
+    width: 30vw;
+    height: 10vh;
+    border-top: 1px solid #cfcfcf;
+}
+#delete_task_container:hover{
+    background: #ffeeee;
+}
+.delete_task_img{
+    content: url(../svg/trash.svg);
+    position: absolute;
+    width: 6vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
